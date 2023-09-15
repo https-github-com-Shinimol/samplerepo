@@ -7,9 +7,10 @@ on:
         default: v1.0.0
         required: true
 jobs:
-  bump-version:
-    name: Bump Package Version
+  build:
     runs-on: ubuntu-latest
+    name: print Repo Name
     steps:
       - name: Example variable usage
-        run: git tag ${{ github.event.inputs.version }}
+        run: echo "Repo Name"
+
