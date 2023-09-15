@@ -13,4 +13,9 @@ jobs:
     steps:
       - name: Example variable usage
         run: echo "Repo Name"
+      - name: Run My Action
+        run: |
+          echo "My parameter is: ${{ inputs.my_param }}"
+      
+        
 
